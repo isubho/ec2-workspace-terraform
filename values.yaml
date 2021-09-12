@@ -1,0 +1,49 @@
+environment:
+  env-a:
+      ami:
+        kubernetes_nodes:
+          name: amzn2-ami-hvm-2.0.20210813.1-x86_64-gp2
+          owner: "137112412989"
+          #name: "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20210429"
+          #owner: "099720109477"
+      ec2:
+        instance_type: "t2.micro"
+        availability_zone: "eu-west-2a"
+
+      network_interface:
+        private_ips: ["172.31.19.86"]
+
+      security_group:
+        id: sg-019bc57e2975c2e01
+
+      subnet:
+        subnet_a_id: "subnet-09620973"
+        subnet_b_id: "subnet-a60db3ea"
+        subnet_c_id: "subnet-5d183734"
+
+      vpc:
+        id: "vpc-01361369"
+  env-b:
+      ami:
+        kubernetes_nodes:
+          name: amzn2-ami-hvm-2.0.20210813.1-x86_64-gp2
+          owner: "137112412989"
+          #name: "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20210429"
+          #owner: "099720109477"
+      ec2:
+        instance_type: "t2.micro"
+        availability_zone: "eu-west-2a"
+      
+      network_interface:
+        private_ips: ["172.31.19.87"]
+
+      security_group:
+        id: sg-019bc57e2975c2e01
+
+      subnet:
+        subnet_a_id: "subnet-09620973"
+        subnet_b_id: "subnet-a60db3ea"
+        subnet_c_id: "subnet-5d183734"
+
+      vpc:
+        id: "vpc-01361369"
